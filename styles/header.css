@@ -1,0 +1,140 @@
+.cabecalho {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+    box-shadow: 0px 8px var(--cor-secundaria);
+}
+
+.cabecalho__opcoes {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.cabecalho__opcoes__link {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 1.56rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+.contato {
+    margin: 0 2em 0 auto;
+}
+
+.cabecalho__opcoes__link:hover {
+    color: var(--cor-sexta);
+    scale: 1.2;
+    transition: 0.5s; 
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho__opcoes__link:active {
+        color: var(--cor-sexta);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .cabecalho {
+        padding: 0.2em;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .cabecalho__menu-hamburguer {
+        width: 4.5em;
+        height: 4em;
+        background-image: url("../img/LogoMenu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    
+    .opcoes__botao:checked ~ .opcoes__rotulo > .cabecalho__menu-hamburguer {
+        background-image: url("../img//LogoMenuAberto.png");
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo {
+        background: var(--cor-secundaria);
+    }
+
+    .cabecalho__img {
+        padding: 1em;
+    }
+
+    .lista__menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .opcoes__botao:checked ~.lista__menu {
+        display: block;
+    }
+
+    .lista__menu__titulo,
+    .lista__menu__item {
+        padding: 1em;
+        background-color: var(--cor-terciaria);
+        border: 0.1em solid var(--cor-secundaria);
+        border-radius: 1em;
+        text-align: left;
+    }
+    .lista__menu__titulo {
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-principal);
+        font-size: 1.5em;
+        font-weight: bolder; 
+    }
+    .lista__menu__link {
+        color: var(--cor-primaria);
+        font-family: var(--fonte-secundaria);
+        font-size: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .lista__menu__link:active {
+        color: var(--cor-sexta);
+        font-size: 2.1em;
+    }
+    .lista__menu__item:active {
+        background-color: var(--cor-secundaria);
+    }
+
+
+    .contato {
+        font-size: 2em;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .cabecalho__img-logo {
+        display: none;  
+    }
+
+    .cabecalho__opcoes {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho__menu-hamburguer {
+        width: 3em;
+        height: 3em;
+    }
+    
+    .contato {
+        font-size: 1.3em;
+        margin: 0 0.5em 0 auto;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Comic+Neue&display=swap');
+
+@import url("styles/screen.css");
+@import url("styles/header.css");
+@import url("styles/footer.css");
+
+:root {
+    --fundo-degrade: linear-gradient(to right, #00bfff, #74dcff);
+    --cor-primaria: #201658;
+    --cor-secundaria: #1D24CA;
+    --cor-terciaria: #36cbfd;
+    --cor-quarta: #b7edff;
+    --cor-quinta: #f9e944;
+    --cor-sexta: #fff5e1;
+
+    --fonte-principal: "Anta", sans-serif;
+    --fonte-secundaria: "Comic Neue", cursive;
+}
+
+*{ /*reset margem */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--fundo-degrade);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
