@@ -2,11 +2,11 @@
     position: absolute;
     background: var(--calc-fundo);
     top: auto;
-    left: 70%;
+    left: 65%;
     text-align: center;
     align-items: center;
     padding: 1em;
-    border: 0.2em solid var(--calc-brilho);
+    border: 0.3em solid var(--cor-sexta);
     border-radius: 1.5em;
 }
 
@@ -16,12 +16,12 @@
     width: 11em;
     height: 2em;
     border: 0.1em solid var(--calc-brilho);
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     margin: 0 0 1em 0;
     padding: 0.5em 0;
     font-family: var(--fonte-principal);
     text-align: right;
-}
+    }
 
 .calculadora__botao {
     background: var(--calc-degrade);
@@ -45,9 +45,84 @@
     background: var(--calc-amarelo-degrade);
     color: var(--cor-primaria);
     height: 3em;
-    width: 3em;
+    width: 6.4em;
     border: 0.1em solid var(--calc-brilho);
     border-radius: 0.5em;
     margin: 0.2em;
     cursor: pointer;
+}
+
+.responsivo {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .calculadora {
+        position: static;
+        margin: 1em 0 2em 0;
+        padding: 2em 5em;
+    }
+
+    #resultado {
+        width: 40em;
+        text-align: center;
+    }
+
+    .calculadora__botao {
+        width: 11em;
+        margin: 0.5em;
+    }
+
+    .calculadora__botao-2 {
+        width: 23em;
+        margin: 0.5em;
+    }
+
+    .responsivo {
+        display: block;
+    }
+
+    .titulo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .calculadora {
+        padding: 2em 1em;
+    }
+
+    #resultado {
+        width: 31em;
+    }
+
+    .calculadora__botao {
+        width: 8em;
+    }
+
+    .calculadora__botao-2 {
+        width: 18em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .calculadora {
+        margin: 0 0 2em 0;
+        padding: 2em 1em;
+    }
+
+    #resultado {
+        width: 15em;
+        text-align: center;
+    }
+
+    .calculadora__botao {
+        width: 3.6em;
+        margin: 0.5em;
+    }
+
+    .calculadora__botao-2 {
+        width: 8em;
+        margin: 0.5em;
+    }
 }
