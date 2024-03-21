@@ -20,7 +20,7 @@
             <ul class="lista__menu">
                 <li class="lista__menu__titulo">Vcalculator</li>
                 <li class="lista__menu__item"><a href="index.html" class="lista__menu__link">Home</a></li>
-                <li class="lista__menu__item"><a href   ="Calculator.html" class="lista__menu__link">Calculadora</a></li>
+                <li class="lista__menu__item"><a href   ="Calculator.html"" class="lista__menu__link">Calculadora</a></li>
                 <li class="lista__menu__item"><a href="IMC.html" class="lista__menu__link">IMC</a></li>
             </ul>
             <a class="cabecalho__opcoes__link contato" href="#">Contato</a>
@@ -38,7 +38,51 @@
 
     </header>
 
-    <main></main>
+    <main class="principal">
+        <section class="principal__container">
+            <div class="principal__container__texto">
+                <h1 class="principal__titulo">Calculadora<b class="principal__destaque">+</b></h1>
+                <p class="principal__texto">Uma calculadora eletrônica é tipicamente um dispositivo eletrônico portátil usado para realizar cálculos, variando de aritmética básica a matemática complexa.</p>
+                <p class="principal__texto">A primeira calculadora eletrônica de estado sólido foi criada no início da década de 1960. Dispositivos de bolso tornaram-se disponíveis na década de 1970, especialmente depois que o Intel 4004, o primeiro microprocessador, foi desenvolvido pela Intel para a empresa japonesa de calculadoras Busicom.</p>
+            </div>
+            
+            <div class="calculadora">
+                <p class="calculadora__resultado" id="resultado"></p>
+
+                <table>
+                    <tr>
+                        <td colspan="2" ><button class="calculadora__botao-2" style="width: 6.3em" onclick="Limpar()">C</button></td>
+                        <td><button class="calculadora__botao" onclick="Apagar()">B</button></td>                  
+                        <td><button class="calculadora__botao" onclick="Inserir('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__botao" onclick="Inserir('7')">7</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('8')">8</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('9')">9</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__botao" onclick="Inserir('4')">4</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('5')">5</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('6')">6</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__botao" onclick="Inserir('1')">1</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('2')">2</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('3')">3</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__botao" onclick="Inserir('0')">0</button></td>
+                        <td><button class="calculadora__botao" onclick="Inserir('.')">.</button></td>
+                        <td colspan="2"><button class="calculadora__botao-2" style="width: 6.3em" onclick="Igual()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="rodape">
         <h2 class="rodape__titulo">Desenvolvido por <b class="rodape__destaque">Vinicius Feliciano Mello</b></h2>
@@ -52,6 +96,8 @@
             </li>
         </ul>
     </footer>
+
+    <script src="javascript/appCalculator .js"></script>
 
 </body>
 </html>

@@ -12,10 +12,6 @@
     font-size: 2.3em;
     margin: 1em 0 1em 0;
 }
-.principal__titulo:hover {
-    scale: 1.1;
-    transition: 0.5s;
-}
 
 .principal__texto {
     color: var(--cor-primaria);

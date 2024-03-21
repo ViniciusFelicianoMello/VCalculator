@@ -4,6 +4,7 @@
 @import url("styles/screen.css");
 @import url("styles/header.css");
 @import url("styles/footer.css");
+@import url("styles/calculator.css");
 
 :root {
     --fundo-degrade: linear-gradient(to right, #00bfff, #74dcff);
@@ -13,6 +14,12 @@
     --cor-quarta: #b7edff;
     --cor-quinta: #f9e944;
     --cor-sexta: #fff5e1;
+
+    --calc-degrade: linear-gradient(-220deg, #006464, #001974, #50045d);
+    --calc-brilho-degrade: linear-gradient(-220deg, #00ffff, #0084ff, #c800ff);
+    --calc-brilho: #00d2ff;
+    --calc-fundo: #2a77be;
+    --calc-amarelo-degrade: linear-gradient(-220deg, #ff8c27, #f9e944, #ff368a);
 
     --fonte-principal: "Anta", sans-serif;
     --fonte-secundaria: "Comic Neue", cursive;
