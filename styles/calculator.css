@@ -32,6 +32,7 @@
     border-radius: 0.5em;
     margin: 0.2em;
     cursor: pointer;
+    font-family: var(--fonte-principal);
 }
 .calculadora__botao:hover, .calculadora__botao-2:hover {
     background: var(--calc-brilho-degrade);
@@ -39,6 +40,17 @@
     border: 0.1em solid var(--cor-secundaria);
     scale: 1.1;
     transition: 0.3s;
+    font-family: var(--fonte-principal);
+} .calculadora__botao:active {
+    background: var(--calc-amarelo-degrade);
+    color: var(--cor-sexta);
+    border: 0.1em solid var(--cor-sexta);
+    transition: 0s;
+}  .calculadora__botao-2:active {
+    background: var(--calc-degrade);
+    color: var(--cor-sexta);
+    border: 0.1em solid var(--cor-sexta);
+    transition: 0s;
 }
 
 .calculadora__botao-2 {
@@ -50,6 +62,7 @@
     border-radius: 0.5em;
     margin: 0.2em;
     cursor: pointer;
+    font-family: var(--fonte-principal);
 }
 
 .responsivo {

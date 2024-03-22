@@ -5,6 +5,7 @@
 @import url("styles/header.css");
 @import url("styles/footer.css");
 @import url("styles/calculator.css");
+@import url("styles/IMC.css");
 
 :root {
     --fundo-degrade: linear-gradient(to right, #00bfff, #74dcff);
@@ -14,8 +15,9 @@
     --cor-quarta: #b7edff;
     --cor-quinta: #f9e944;
     --cor-sexta: #fff5e1;
+    --cor-setima: #001d86;
 
-    --calc-degrade: linear-gradient(-220deg, #006464, #001974, #50045d);
+    --calc-degrade: linear-gradient(-220deg, #006464, #001d86, #50045d);
     --calc-brilho-degrade: linear-gradient(-220deg, #00ffff, #0084ff, #c800ff);
     --calc-brilho: #00d2ff;
     --calc-fundo: #2a77be;

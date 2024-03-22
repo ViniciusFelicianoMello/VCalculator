@@ -1,0 +1,92 @@
+.IMC {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: var(--calc-fundo);
+    top: auto;
+    left: 65%;
+    text-align: center;
+    padding: 1em;
+    border: 0.3em solid var(--cor-sexta);
+    border-radius: 1.5em;
+    height: 50vh;
+}
+
+.IMC__titulo,.resultadoIMC__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.IMC__input {
+    background: var(--calc-degrade);
+    color: var(--calc-brilho);
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em 0 0 0;
+    border: 0.1em solid var(--calc-brilho);
+    border-radius: 1em;
+    outline: none;
+}  .IMC__input:active {
+    border: 0.1em solid var(--cor-sexta);
+} .IMC__input::-webkit-outer-spin-button, .IMC__input::-webkit-inner-spin-button {
+    appearance: none;
+} input::placeholder {
+    color: var(--calc-brilho);
+}
+
+.IMC__botao {
+    background: var(--calc-degrade);
+    color: var(--calc-brilho);
+    padding: 0.2em 3em;
+    border: 0.1em solid var(--calc-brilho);
+    border-radius: 0.5em;
+    margin: 0.2em;
+    cursor: pointer;
+
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+} .IMC__botao:hover {
+    background: var(--calc-brilho-degrade);
+    color: var(--cor-secundaria);
+    border: 0.1em solid var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+} .IMC__botao:active {
+    background: var(--calc-amarelo-degrade);
+    color: var(--cor-sexta);
+    border: 0.1em solid var(--cor-sexta);
+    transition: 0s;
+}
+
+.resultadoIMC {
+    align-items: center;
+    text-align: left;  
+    border-top: 0.1em solid var(--cor-sexta);
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    padding: 0.5em 0 0;
+
+}   
+
+#resultadoIMC__div {
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    font-weight: bolder;
+    margin-top: 0.5em;
+    gap: 0.5em;
+    align-items: center;
+} #valor {
+    font-size: 1.8em;
+    color: var(--cor-sexta);
+} #descricao {
+    display: flex;
+    width: auto;
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    font-weight: bolder;
+    color: var(--cor-setima);
+    border-bottom: 0.1em solid var(--cor-sexta);
+}
