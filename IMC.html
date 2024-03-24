@@ -42,8 +42,9 @@
         <section class="principal__container">
             <div class="principal__container__texto">
                 <h2 class="principal__titulo titulo">Calculadora<b class="principal__destaque">IMC</b></h2>
-                <p class="principal__texto"></p>
-                <p class="principal__texto"></p>
+                <p class="principal__texto">
+                    O Índice de Massa Corporal (IMC) é como uma regrinha simples que relaciona o seu peso com a sua altura para dar uma noção geral se você está acima do peso, no peso certo ou abaixo do peso. Ele é calculado dividindo o seu peso em quilogramas pelo quadrado da sua altura em metros.</p>
+                <p class="principal__texto">Claro, o IMC tem suas limitações, porque não considera coisas como a quantidade de músculo que você tem, então uma pessoa musculosa pode parecer "acima do peso" de acordo com o IMC, mesmo que esteja em boa forma física. Mas, de maneira geral, ele pode ser útil para dar uma noção inicial sobre a saúde do seu peso corporal.</p>
             </div>
 
             <div class="IMC">
@@ -53,7 +54,7 @@
                 <label class="IMC__titulo" for="altura">Digite sua altura:</label>
                 <input class="IMC__input" type="number" placeholder="Altura em metros" id="altura" required>
                 <br><br>
-                <button class="IMC__botao">Calcular</button>
+                <button class="IMC__botao" onclick="imc()">Calcular</button>
 
                 
 
@@ -68,6 +69,7 @@
 
             <h2 class="principal__titulo responsivo" id="calcular">Calculadora<b class="principal__destaque">IMC</b></h2>
         </section>
+
     </main>
 
     <footer class="rodape">

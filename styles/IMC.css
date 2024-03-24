@@ -9,7 +9,6 @@
     padding: 1em;
     border: 0.3em solid var(--cor-sexta);
     border-radius: 1.5em;
-    height: 50vh;
 }
 
 .IMC__titulo,.resultadoIMC__titulo {
@@ -88,5 +87,63 @@
     font-size: 1em;
     font-weight: bolder;
     color: var(--cor-setima);
+    padding-bottom: 1em;
     border-bottom: 0.1em solid var(--cor-sexta);
+   
+}
+
+@media screen and (max-width: 1024px) {
+    .IMC {
+        position: static;
+        margin: 1em 0 2em 0;
+        padding: 2em 2em;
+    }
+
+    .IMC__titulo,.resultadoIMC__titulo {
+        font-size: 2.2em;
+    }
+
+    .IMC__input {
+        padding: 0.5em 1em;
+        margin: 0.5em 0 0 0;
+        border-radius: 1em;
+        outline: none;
+        width: 50vw;
+        font-size: 2em;
+    }
+
+    .IMC__botao {
+        font-size: 2em;
+    }
+
+    #valor {
+        font-size: 3em;
+    } #descricao {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .responsivo {
+        font-size: 1.5em;
+    }
+
+    .IMC {
+        padding: 1em 1em;
+    }
+
+    .IMC__titulo,.resultadoIMC__titulo {
+        font-size: 1.5em;
+    }
+
+    .IMC__input {
+        font-size: 1.5em;
+        margin: 0.2em 0 0 0;
+        width: 60vw;
+    }
+
+    .IMC__botao {
+        font-size: 1em;
+        padding: 1em;
+    }
 }
