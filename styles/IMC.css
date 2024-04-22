@@ -3,7 +3,7 @@
     flex-direction: column;
     position: absolute;
     background: var(--calc-fundo);
-    top: auto;
+    top: 20vh;
     left: 65%;
     text-align: center;
     padding: 1em;

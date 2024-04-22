@@ -1,7 +1,7 @@
 .calculadora {
     position: absolute;
     background: var(--calc-fundo);
-    top: auto;
+    top: 25vh;
     left: 65%;
     text-align: center;
     align-items: center;

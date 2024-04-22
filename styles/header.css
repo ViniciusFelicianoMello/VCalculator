@@ -50,9 +50,8 @@
     }
 
     .cabecalho__menu-hamburguer {
-        width: 4.5em;
-        height: 4em;
         background-image: url("../img/LogoMenu.png");
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         display: inline-block;
@@ -67,7 +66,7 @@
     }
 
     .cabecalho__img {
-        padding: 1em;
+        margin: 0.5em;
     }
 
     .lista__menu {

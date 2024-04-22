@@ -1,3 +1,7 @@
+.principal {
+    height: 73.8vh;
+}
+
 .principal__container {  
     display: grid;
     grid-template-columns: 50% 100%;
@@ -41,6 +45,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .principal {
+        height: 85vh;
+    }    
+
     .principal__container{
         display: flex;
         flex-direction: column-reverse;
@@ -69,6 +77,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .principal {
+        height: auto;
+    }    
+
     .principal__texto {
         font-size: 1.2em;
         padding: 0.5em;
